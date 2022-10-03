@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         read_in();
@@ -8,20 +10,22 @@ public class Main {
 
     static void read_in()
     {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Adja meg a black board pontszámot!");
-        //olvassuk be a változót az osztály változóba
+        black_board_score = scanner.nextInt();
 
         System.out.println("Adja meg a laboratory pontszámot!");
-        //olvassuk be a változót az osztály változóba
+        laboratory_score = scanner.nextInt();
 
         System.out.println("Adja meg az írott rész pontszámát!");
-        //olvassuk be a változót az osztály változóba
+        written_part_score = scanner.nextInt();
 
     }
 
-    int black_board_score;
-    int laboratory_score;
-    int written_part_score;
+    static int black_board_score;
+    static int laboratory_score;
+    static int written_part_score;
 
     int result;
 
@@ -45,6 +49,7 @@ public class Main {
         {
             return "kiváló";
         }
+
     }
 
 //eredmény kiírása
