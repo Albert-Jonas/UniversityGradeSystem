@@ -16,9 +16,11 @@ class MainTest {
 
     @org.junit.jupiter.api.Test
     void read_in() {
+
     }
 
     @org.junit.jupiter.api.Test
     void calculate() {
+        Main.calculate();
     }
 }
