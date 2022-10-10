@@ -20,7 +20,6 @@ public class Main {
 
         System.out.println("Adja meg az írott rész pontszámát!");
         written_part_score = scanner.nextInt();
-
     }
 
     static int black_board_score;
