@@ -35,19 +35,32 @@ class MainTest {
     }
 
     @org.junit.jupiter.api.Test
-    void read_in() {
+    void read_in_25_25_25() {
         final String testString = "25\n25\n25\n";
         provideInput(testString);
 
         Main.read_in();
 
+        assertEquals(25,Main.black_board_score);
+        assertEquals(25,Main.laboratory_score);
         assertEquals(25,Main.written_part_score);
+    }
+    @org.junit.jupiter.api.Test
+    void read_in_0_50_50() {
+        final String testString = "0\n50\n50\n";
+        provideInput(testString);
+
+        Main.read_in();
+
+        assertEquals(0,Main.black_board_score);
+        assertEquals(50,Main.laboratory_score);
+        assertEquals(50,Main.written_part_score);
     }
 
     @org.junit.jupiter.api.Test
     void calculate() {
         Main.calculate();
-        assertEquals("Hello Baeldung Readers!!", outputStreamCaptor.toString()
+        assertEquals("Pontszámaid összesen : 0" + "\n" + "Megbuktál mert egy tárgyból nem érted el a 25 pontot, hiába van 0 pontod", outputStreamCaptor.toString()
                 .trim());
     }
 }
