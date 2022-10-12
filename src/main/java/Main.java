@@ -35,13 +35,13 @@ public class Main {
 
         if (black_board_score < 25 || laboratory_score <25 || written_part_score < 25)
         {
-            System.out.println("Megbuktál mert egy tárgyból nem érted el a 25 pontot, hiába van  " + result+ "  pontod");
+            System.out.println("Megbuktál mert egy tárgyból nem érted el a 25 pontot, hiába van " + result+ " pontod");
         } else if ( black_board_score + laboratory_score + written_part_score < 76)
         {
-            System.out.println("Megbukott, mert az összpontszám nem érte el a 76-ot  " + result);
+            System.out.println("Megbukott, mert az összpontszám nem érte el a 76-ot " + result);
         } else if ( black_board_score + laboratory_score + written_part_score > 75 && black_board_score + laboratory_score + written_part_score < 100)
         {
-            System.out.println("elégséges  " + result);
+            System.out.println("elégséges " + result);
         } else if ( black_board_score + laboratory_score + written_part_score > 99 && black_board_score + laboratory_score + written_part_score < 125)
         {
             System.out.println("jó " + result);
